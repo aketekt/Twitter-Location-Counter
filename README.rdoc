@@ -1,28 +1,29 @@
-== README
+This is a basic ruby on rails app.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It takes tweets from the twitter streaming API and counts mentions of countries in European continent.
 
-Things you may want to cover:
+In order to use it you must add a file .env to the root and add your twitter API tokens
+Here is an example .env file (add your own access tokens!):
 
-* Ruby version
+TWITTER_CONSUMER_KEY='<YOUR-KEY>'
+TWITTER_CONSUMER_SECRET='<YOUR-SECRET>'
+TWITTER_OAUTH_TOKEN='<YOUR-OAUTH-TOKEN>'
+TWITTER_OAUTH_TOKEN_SECRET='YOUR-SECRET-TOKEN'
 
-* System dependencies
+NB Currently this app only work in the console by typing the following commands but I am working on completely the UI currently
 
-* Configuration
+#to enter rails console type:
+$ rails c
 
-* Database creation
+#To start TwitterApi function:
+$ TwitterApi
 
-* Database initialization
+#To connect to streaming API:
+$ TwitterApi.client
 
-* How to run the test suite
+#To stream and count tweets:
+$ TwitterApi.stream_tweets
 
-* Services (job queues, cache servers, search engines, etc.)
+Now you will see tweets being counted in the terminal.
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Enjoy! 
