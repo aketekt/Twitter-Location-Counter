@@ -3,8 +3,8 @@ class TwitterApi
 require 'tweetstream'
 
   def self.stream_tweets
-    russia, ukraine, france, spain, sweeden, norway, germany, finland, poland, italy, uk, romania, belarus = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-    TweetStream::Client.new.track('Russia', 'Ukraine', 'France', 'Spain', 'Sweeden', 'Norway', 'Germany', 'Finland', 'Poland', 'Italy', 'UK', 'Romania', 'Belarus', 'Kazakhstan', 'Greece', 'Bulgaria', 'Iceland', 'Hungary', 'portugal', 'Serbia', 'Ireland', 'Austria', 'Czech Republic', 'Georgia', 'Lithuania', 'Latvia', 'Croatia', 'Bosnia', 'Herzegovina', 'Slovakia', 'Estonia', 'Denmark', 'Netherlands', 'Holland', 'Switzerland', 'Moldova', 'Belgium', 'Albania', 'Macedonia', 'Turkey', 'Slovenia', 'Montenegro', 'Cyprus', 'Azerbaijan', 'Luxembourg', 'Andorra', 'Malta', 'Liechtenstein', 'San Marino', 'Monaco', 'Vatican City') do |status|
+    russia, ukraine, france, spain, sweeden, norway, germany, finland, poland, italy, uk, romania, belarus, kazakhstan, greece, bulgaria, iceland, hungary, portugal, serbia, ireland, austria, czech, georgia, lithuania, latvia, croatia, bosnia, herzegovina, slovakia, estonia, denmark, netherlands, switzerland, moldova, belgium, albania, macedonia, turkey, slovenia, montenegro, cyprus, azerbaijan, luxembourg, andorra, malta, liechtenstein, san, monaco, vatican = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    TweetStream::Client.new.track('Russia', 'Ukraine', 'France', 'Spain', 'Sweeden', 'Norway', 'Germany', 'Finland', 'Poland', 'Italy', 'UK', 'Romania', 'Belarus', 'Kazakhstan', 'Greece', 'Bulgaria', 'Iceland', 'Hungary', 'portugal', 'Serbia', 'Ireland', 'Austria', 'Czech Republic', 'Georgia', 'Lithuania', 'Latvia', 'Croatia', 'Bosnia', 'Herzegovina', 'Slovakia', 'Estonia', 'Denmark', 'Netherlands', 'Switzerland', 'Moldova', 'Belgium', 'Albania', 'Macedonia', 'Turkey', 'Slovenia', 'Montenegro', 'Cyprus', 'Azerbaijan', 'Luxembourg', 'Andorra', 'Malta', 'Liechtenstein', 'San Marino', 'Monaco', 'Vatican City') do |status|
       case "#{status.text}"
       when /Russia/
         russia = russia + 1
@@ -45,8 +45,122 @@ require 'tweetstream'
       when /Belarus/
         belarus = belarus + 1
         puts "Belarus = #{belarus}"
+      when /Kazakhstan/
+        kazakhstan = kazakhstan + 1
+        puts "kazakhstan = #{kazakhstan}"
+      when /Greece/
+        greece = greece + 1
+        puts "Greece = #{greece}"
+      when /Bulgaria/
+        bulgaria = bulgaria + 1
+        puts "Bulgaria = #{bulgaria}"
+      when /Iceland/
+        iceland = iceland + 1
+        puts "Iceland = #{iceland}"
+      when /Hungary/
+        hungary = hungary + 1
+        puts "Hungary = #{hungary}"
+      when /Portugal/
+        portugal = portugal + 1
+        puts "Portugal = #{portugal}"
+      when /Serbia/
+        serbia = serbia + 1
+        puts "Serbia = #{serbia}"
+      when /Ireland/
+        ireland = ireland + 1
+        puts "Ireland = #{ireland}"
+      when /Austria/
+        austria = austria + 1
+        puts "Austria = #{austria}"
+      when /Czech Republic/
+        czech = czech + 1
+        puts "Czech Republic = #{czech}"
+      when /Georgia/
+        georgia = georgia + 1
+        puts "Georgia = #{georgia}"
+      when /Lithuania/
+        lithuania = lithuania + 1
+        puts "Lithuania = #{lithuania}"
+      when /Latvia/
+        latvia = latvia + 1
+        puts "Latvia = #{latvia}"
+      when /Croatia/
+        croatia = croatia + 1
+        puts "Croatia = #{croatia}"
+      when /Bosnia/
+        bosnia = bosnia + 1
+        puts "Bosnia = #{bosnia}"
+      when /Belarus/
+        belarus = belarus + 1
+        puts "Belarus = #{belarus}"
+      when /Herzegovina/
+        herzegovina = herzegovina + 1
+        puts "Herzegovina = #{herzegovina}"
+      when /Slovakia/
+        slovakia = slovakia + 1
+        puts "Slovakia = #{slovakia}"
+      when /Estonia/
+        estonia = estonia + 1
+        puts "Estonia = #{estonia}"
+      when /Denmark/
+        denmark = denmark + 1
+        puts "Denmark = #{denmark}"
+      when /Netherlands/
+        netherlands = netherlands + 1
+        puts "netherlands = #{netherlands}"
+      when /Switzerland/
+        switzerland = switzerland + 1
+        puts "Switzerland = #{switzerland}"
+      when /Moldova/
+        moldova = moldova + 1
+        puts "Moldova = #{moldova}"
+      when /Belgium/
+        belgium = belgium + 1
+        puts "Belgium = #{belgium}"
+      when /Albania/
+        albania = albania + 1
+        puts "Albania = #{albania}"
+      when /Macedonia/
+        macedonia = macedonia + 1
+        puts "macedonia = #{macedonia}"
+      when /Turkey/
+        turkey = turkey + 1
+        puts "Turkey = #{turkey}"
+      when /Slovenia/
+        slovenia = slovenia + 1
+        puts "Slovenia = #{slovenia}"
+      when /Montenegro/
+        montenegro = montenegro + 1
+        puts "Montenegro = #{montenegro}"
+      when /Cyprus/
+        cyprus = cyprus + 1
+        puts "Cyprus = #{cyprus}"
+      when /Azerbaijan/
+        azerbaijan = azerbaijan + 1
+        puts "Azerbaijan = #{azerbaijan}"
+      when /Luxembourg/
+        luxembourg = luxembourg + 1
+        puts "Luxembourg = #{luxembourg}"
+      when /Andorra/
+        andorra = andorra + 1
+        puts "Andorra = #{andorra}"
+      when /Malta/
+        malta = malta + 1
+        puts "Malta = #{malta}"
+      when /Liechtenstein/
+        liechtenstein = liechtenstein + 1
+        puts "Liechtenstein = #{liechtenstein}"
+      when /San Marino/
+        san = san + 1
+        puts "San Marino = #{san}"
+      when /Monaco/
+        monaco = monaco + 1
+        puts "Monaco = #{monaco}"
+      when /Vatican City/
+        vatican = vatican + 1
+        puts "Vatican City = #{vatican}"
       else
-        puts "not included"
+        puts "error"
       end
     end
 

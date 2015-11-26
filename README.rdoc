@@ -14,7 +14,7 @@ TWITTER_OAUTH_TOKEN='<YOUR-OAUTH-TOKEN>'
 
 TWITTER_OAUTH_TOKEN_SECRET='YOUR-SECRET-TOKEN'
 
-NB Currently this app only work in the console by typing the following commands but I am working on completely the UI currently
+NB Currently this app only works in the console by typing the following commands but I am working on completely the UI currently
 
 #to enter rails console type:
 $ rails c
