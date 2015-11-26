@@ -2,12 +2,16 @@ This is a basic ruby on rails app.
 
 It takes tweets from the twitter streaming API and counts mentions of countries in European continent.
 
-In order to use it you must add a file .env to the root and add your twitter API tokens
+In order to use it you must add a file .env to the root and add your twitter API tokens.
+
 Here is an example .env file (add your own access tokens!):
 
 TWITTER_CONSUMER_KEY='<YOUR-KEY>'
+
 TWITTER_CONSUMER_SECRET='<YOUR-SECRET>'
+
 TWITTER_OAUTH_TOKEN='<YOUR-OAUTH-TOKEN>'
+
 TWITTER_OAUTH_TOKEN_SECRET='YOUR-SECRET-TOKEN'
 
 NB Currently this app only work in the console by typing the following commands but I am working on completely the UI currently
@@ -26,4 +30,4 @@ $ TwitterApi.stream_tweets
 
 Now you will see tweets being counted in the terminal.
 
-Enjoy! 
+Enjoy!
